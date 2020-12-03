@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息管理系统</title>
+    <link rel="icon" href="/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/javascript/jquery.js"></script>
+    <script src="/javascript/plug-ins/layerUi/layer.js"></script>
+    <script src="/javascript/public.js"></script>
+</head>
+<body>
+<div class="main-wrap">
+    <div class="side-nav">
+        <div class="side-logo">
+            <div class="logo">
+				<span class="logo-ico">
+					<i class="i-l-1"></i>
+					<i class="i-l-2"></i>
+					<i class="i-l-3"></i>
+				</span>
+                <strong>学生信息管理系统</strong>
+            </div>
+        </div>
+
+        <nav class="side-menu content mCustomScrollbar" data-mcs-theme="minimal-dark">
+
+            <ul>
+
+                <li>
+                    <dl>
+                        <dt>
+                            <i class="icon-list-alt"></i>成员管理<i class="icon-angle-right"></i>
+                        </dt>
+                        <dd>
+                            <a href="/admin/student">学生信息</a>
+                        </dd>
+                        <dd>
+                            <a href="/admin/teacher">教师信息</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <dl>
+                        <dt>
+                            <i class="icon-fighter-jet"></i>学生发展<i class="icon-angle-right"></i>
+                        </dt>
+                        <dd>
+                            <a href="/admin/course">已设课程</a>
+                        </dd>
+                        <dd>
+                            <a href="/admin/contribute">社会成果</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <dl>
+                        <dt>
+                            <i class="icon-laptop"></i>账号设置<i class="icon-angle-right"></i>
+                        </dt>
+                        <dd>
+                            <a href="/admin/addUser">新增账号</a>
+                        </dd>
+                        <dd>
+                            <a href="/admin/password">修改密码</a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </nav>
+
+        <footer class="side-footer">© GongYYY 版权所有</footer>
+
+    </div>
+    <div class="content-wrap">
+        <header class="top-hd">
+            <div class="hd-lt">
+                <a class="icon-reorder"></a>
+            </div>
+            <div class="hd-rt">
+                <ul>
+                    <li>
+                        <a><i class="icon-user"></i>管理员</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" id="JsSignOut"><i class="icon-signout"></i>安全退出</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main-cont content mCustomScrollbar">
+            <div class="page-wrap">
+                <section class="page-hd">
+                    <header>
+                        <h2 class="title" style="font-size: 40px">{{ tip }}</h2>
+                        <p class="title-description">
+                            {{ description }}
+                        </p>
+                    </header>
+                    <hr>
+                </section>
+            </div>
+        </main>
+        <footer class="btm-ft">
+            <p class="clear">
+                <span class="fr text-info">
+					<em class="uppercase">
+						<a href="#"><i class="icon-user"></i></a>
+					</em> |
+					<em class="uppercase">
+                        <a href="#"><i class="icon-envelope-alt"></i></a>
+					</em>
+					<a onclick="reciprocate()" class="text-primary"><i class="icon-qrcode"></i>打赏</a>
+				</span>
+            </p>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
